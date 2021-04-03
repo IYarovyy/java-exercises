@@ -29,6 +29,15 @@ public class BuildIterator<T> implements Iterable<T> {
 
 
   private class AllPartsIterator implements Iterator<T> {
+    @Override
+    public boolean hasNext() {
+      return false;
+    }
+
+    @Override
+    public T next() {
+      return null;
+    }
     //TODO Add implementation here
   }
 
